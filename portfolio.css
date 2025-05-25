@@ -1,0 +1,314 @@
+body {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.menu-underline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.97);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    z-index: 1000;
+    padding: 0;
+}
+.menu-underline ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    gap: 2rem;
+}
+.menu-underline a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+.menu-underline a:hover {
+    color: #fff;
+    background: #222;
+}
+.menu-underline .underline{
+       width: 130px;
+       height:6px;
+       border-radius:3px; 
+       background-color: #0095f9;
+       transition: all .4s ease-in-out;  
+}
+.menu-underline a:nth-child(1):hover~.underline{
+       transition: all .4s ease-in-out;
+       
+}  
+.menu-underline a:nth-child(1):hover{
+       color: #0095f9;
+}  
+.menu-underline a:nth-child(2):hover{
+       color: #0095f9;
+}
+.menu-underline a:nth-child(3):hover{
+       color: #0095f9;
+}
+.menu-underline a:nth-child(4):hover{
+       color: #0095f9;
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem 1rem;
+    margin-top: 70px;
+}
+.hero-scroll-reveal, .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: 60vh;
+    margin-bottom: 3rem;
+}
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.profile-pic img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 90px;
+    border: 4px solid #0095f9;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    background: #222;
+    transition: transform 0.4s;
+}
+.profile-pic img:hover {
+    transform: scale(1.07) rotate(-2deg);
+}
+.intro-text {
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+}
+.intro-text h1 {
+    font-size: 2.3rem;
+    color: #ffffff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.intro-text .highlight {
+    color: #fff;
+    background: #0095f9;
+    padding: 0 0.3em;
+    border-radius: 6px;
+}
+.intro-text h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #f5f5f5;
+}
+.intro-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+.social-links img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.social-links img:hover {
+    transform: scale(1.13);
+    box-shadow: 0 4px 16px #0095f9;
+}
+section {
+    margin-bottom: 2.5rem;
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    padding: 2rem 1.5rem;
+    opacity: 1;
+    transition: background 0.3s;
+}
+h1 {
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+hr{
+    align-items: center;
+    border-color: gray;
+    width: 100px;
+}
+hr.link{
+    width: 100%;
+    border-color: gray;
+}
+.fotos{
+    text-align: center;
+}
+.imagens img{
+    
+    margin-left: 245px;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid #0095f9;
+    transition: transform 0.4s;
+
+}
+.imagens img:hover{
+    transform: scale(1.07) rotate(-2deg);
+}
+section ul {
+    padding-left: 1.2rem;
+}
+section li {
+    margin-bottom: 0.7rem;
+    font-size: 1.08rem;
+}
+
+.tech-skills {
+    padding: 50px;
+    text-align: center;
+}
+  
+.tech-skills h1 {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+  
+.tech-skills p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+  
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+  
+.skill {
+    
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 130px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+  
+.skill:hover {
+    transform: translateY(-5px);
+}
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+} 
+.skill span {
+    display: block;
+    font-weight: bold;
+}
+.pnovidades{
+    text-align: center;
+}
+footer p{
+    color: gray;
+    text-align: center;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    margin: 15px;
+    text-align: center;
+}
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
+}
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+@media (min-width: 700px) {
+    .hero-scroll-reveal, .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-pic {
+        margin-bottom: 0.5rem;
+    }
+    .intro-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro-text h1 {
+        font-size: 1.3rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-underline ul {
+        gap: 0.5rem;
+    }
+    .menu-underline a {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
+    main {
+        margin-top: 60px;
+    }
+}
